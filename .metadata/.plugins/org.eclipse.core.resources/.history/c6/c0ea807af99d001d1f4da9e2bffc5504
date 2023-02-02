@@ -1,0 +1,74 @@
+package com.springrest.springrest.entities;
+
+public class Course {
+ 
+	private long id;
+	private String title;
+	private String description;
+	
+	
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", title=" + title + ", description=" + description + ", getId()=" + getId()
+				+ ", getTitle()=" + getTitle() + ", getDescription()=" + getDescription() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public long setId(long id) {
+		this.id = id;
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String setTitle(String title) {
+		this.title = title;
+		return title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public String setDescriptiion(String description) {
+		this.description = description;
+		return description;
+	}
+
+	public Course() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Course(long id, String title, String description) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.description = description;
+	}
+
+	public Course updateCourse(long id, String title, String description) {
+		Course c = null;
+		
+		// TODO Auto-generated method stub
+		this.id=this.setId( id);
+		this.title=this.setTitle(title);			
+		this.description=this.setDescription(description);
+		return c;
+		
+		
+	}
+
+	private String setDescription(String description2) {
+		// TODO Auto-generated method stub
+		this.description=description2;
+		return null;
+	}
+	
+}
